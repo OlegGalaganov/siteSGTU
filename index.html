@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="css/dark.css">
+    <link rel="stylesheet" href="css/main.css" id="theme-link">
+</head>
+<body>
+    <header>
+        <div id="logo" onclick="slowScroll('top')">
+            <span>JavaScript</span>
+        </div>
+        <div id="about">
+            <a href="#" title="Возможности" onclick="scrollToMain()">Что такое JavaScript?</a>
+            <a href="#" onclick="scrollToExamples()">Примеры задач</a>
+            <a href="#" onclick="scrollToTest()">Тест по JavaScript</a>
+            <a href="#" onclick="scrollToGratz()">Завершение</a>
+            <a href="#" class="theme-button" id="theme-button" onclick="ChangeTheme()">Сменить тему</a>
+        </div>
+    </header>
+
+    <div id="top">
+        <h1>JavaScript</h1>
+    </div>
+
+    <div id="main">
+        <div class="intro">
+            <h2>Зачем учить JavaScript и где он пригодится</h2>
+            <span>Сейчас JavaScript — единственный язык программирования для браузеров.</span>
+        </div>
+        <div class="text">
+            <span> 
+                JavaScript — это лучший друг HTML и CSS. HTML задает разметку сайта, CSS отвечает за внешний вид, а JavaScript все это оживляет. С помощью кода на JavaScript программист определяет, как страница отреагирует на действия пользователя.
+                Он работает под Windows, macOS, Linux и на мобильных платформах, то есть везде. Если не знаешь JavaScript, делать в программировании интерактивных сайтов нечего.
+                В 2009 году появился Node. js, который вывел JavaScript за пределы браузеров. Теперь его можно запустить хоть на стиральной машине.</span>
+        </div>
+    </div>
+
+    <div id="info">
+        <h2>Как работает JavaScript</h2>
+        <h4>
+            Любое действие пользователя на странице порождает событие. Программирование на JavaScript — это обработка событий.
+            Программист пишет обработчик только для тех событий, на которые стоит реагировать.
+            JavaScript — подходящий язык для изучения программирования. Он достаточно прост, но содержит все фундаментальные вещи: алгоритмы, объектно-ориентированную модель, структуры данных. Если традиционные языки для обучения — Pascal и Basic — несут мало практической пользы, то JavaScript — рабочая лошадка.
+            Начинать с JavaScript хорошо и потому, что синтаксически он похож на великий и ужасный язык С. Изучив JavaScript, получишь базовое представление обо всех «сиобразных» языках: С++, C#, Java, PHP. Они задают тренд в своих областях и весьма популярны, поэтому для новичка важно познакомиться с синтаксисом С.
+            Программа на JavaScript — это простой текст. Писать на JavaScript можно в любом текстовом редакторе.
+        </h4>
+    </div>
+
+    <div id="growth">
+        <h2>Куда развиваться JavaScript-программисту</h2>
+        <h4>
+            Изучив основы JavaScript, можно копать так глубоко, как хочется.
+            Хорошо освоить библиотеки и фреймворки для JavaScript — наборы готовых классов с функциями. Некоторые из них настолько мощные, что полностью меняют сценарии программирования. Для JavaScript самые популярные фреймворки и библиотеки — React, jQuery и Angular2.
+            Кроме фреймворков полезно изучить надстройки над JavaScript: CoffeeScript, TypeScript и Dart. Одни надстройки сделают ваш код чище и компактнее, другие — строже.
+            Наконец, можно взяться за серверное программирование и Node.js. Это трендовая технология, которую используют BMW, Amazon, Apple и другие серьезные компании. Так вы расширите область своих знаний JavaScript за пределы управления веб-страницей.
+        </h4>
+    </div>
+
+    <div id="overview">
+        <h2>Примеры простых задач на JavaScript:</h2>
+        <div id="firstList">
+            <ul>
+                <li>
+                    <h4>Задание 1.1 - создать переменную, узнать ее тип, добавить вывод на экран текста, в зависимости от значения (if else)</h4>
+                    <button class="exampleButton" onclick="onCLickChangeResult(0)">Показать</button>
+                </li>
+                <li>
+                    <h4>Задание 1.2 - запросить у пользователя знак зодиака, и в зависимости от ответа выдать всплывающее окно приветствия (вместо знака зодиака, можно запросить другие данные, предполагающие несколько вариантов ответа) (switch)</h4>
+                    <button class="exampleButton" onclick="onCLickChangeResult(1)">Показать</button>
+                </li>
+                <li>
+                    <h4>Задание 1.3 - вывести все числа от 1 до 40, с использованием 3-х разных циклов</h4>
+                    <button class="exampleButton" onclick="onCLickChangeResult(2)">Показать</button>
+                </li>
+                <li>
+                    <h4>Задание 1.4 - создайте вирусную страницу с постоянно повторяющимся сообщением</h4>
+                    <button class="exampleButton" onclick="onCLickChangeResult(3)">Показать</button>
+                </li>
+                <li>
+                    <h4>Задание 1.5 - Запросить у пользователя любое число больше 5, в случае правильного ответа выдать окошко с поздравлением, в случае неправильного ответа вывести повторное окно с вопросом </h4>
+                    <button class="exampleButton" onclick="onCLickChangeResult(4)">Показать</button>
+                </li>
+                <li>
+                    <h4>Задание 1.6 - выведите четные числа от 8 до 20</h4>
+                    <button class="exampleButton" onclick="onCLickChangeResult(5)">Показать</button>
+                </li>
+                <li>
+                    <h4>Задание 1.7 - выведите нечетные числа от 1 до 7, пропустив 5</h4>
+                    <button class="exampleButton" onclick="onCLickChangeResult(6)">Показать</button>
+                </li>
+            </ul>
+        </div>
+        <div id="secondlist">
+            <ul>
+                <li>
+                    <h4>Задание 2.1 - создать массив 3 разными способами</h4>
+                    <button class="exampleButton" onclick="onCLickChangeResult(7)">Показать</button>
+                </li>
+                <li>
+                    <h4>Задание 2.2 - выведите на экран 5 член вашего массива затем измените его значение</h4>
+                    <button class="exampleButton" onclick="onCLickChangeResult(8)">Показать</button>
+                </li>
+                <li>
+                    <h4>Задание 2.3 - узнайте длину вашего массива и выведите ее значение при наведении на любой элемент</h4>
+                    <button class="exampleButton" onclick="onCLickChangeResult(9)">Показать</button>
+                </li>
+                <li>
+                    <h4>Задание 2.4 - выведите все элементы массива, используя цикл for</h4>
+                    <button class="exampleButton" onclick="onCLickChangeResult(10)">Показать</button>
+                </li>
+                <li>
+                    <h4>Задание 2.5 - создайте 2 массива. Объедините их в один и выведите на экран полученный массив</h4>
+                    <button class="exampleButton" onclick="onCLickChangeResult(11)">Показать</button>
+                </li>
+                <li>
+                    <h4>Задание 2.6 - Удалите последний член получившегося массива и выведите это значение на экран</h4>
+                    <button class="exampleButton" onclick="onCLickChangeResult(12)">Показать</button>
+                </li>
+                <li>
+                    <h4>Задание 2.7 - Добавьте новый элемент в начало вашего объединенного массива</h4>
+                    <button class="exampleButton" onclick="onCLickChangeResult(13)">Показать</button>
+                </li>
+                <li>
+                    <h4>Задание 2.8 - Получите сегодняшнюю дату и выведите ее на экран</h4>
+                    <button class="exampleButton" onclick="onCLickChangeResult(14)">Показать</button>
+                </li>
+                <li>
+                    <h4>Задание 2.9 - Выведите сегодняшнюю дату в формате 11 ноября 2020 года</h4>
+                    <button class="exampleButton" onclick="onCLickChangeResult(15)">Показать</button>
+                </li>
+                <li>
+                    <h4>Задание 2.10 - напишите функцию, подсчитывающую произведение двух случайных чисел в промежутке от нуля до 50</h4>
+                    <button class="exampleButton" onclick="onCLickChangeResult(16)">Показать</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="result">
+        <h2>Решение:</h2>
+        <img id="imageResult" src="http://dl4.joxi.net/drive/2022/01/25/0048/2958/3185550/50/9219e71967.jpg" alt="">
+    </div>
+    <div id="test">
+        <h2 class="quizHeader">Пройдите небольшой тест по JavaScript</h2>
+        <table style="width:100%">
+	        <tr>
+	            <td>
+	  	            <div>
+	  		            <p class="question">1. В чем разница между confirm и prompt?</p>
+
+	    	            <ul>
+	    	            <input class="answer" type="radio" name="q1" value="1">
+	                    <label id="correctString1">prompt вызывает диалоговое окно с полем для ввода, confirm - окно с подтверждением</label>
+	    	            <br>
+	                    <input class="answer" type="radio" name="q1" value="0">
+	                    <label>Они ничем не отличаются</label>
+	                    <br>
+	                    <input class="answer" type="radio" name="q1" value="0">
+	                    <label>confirm вызывает диалоговое окно с полем для ввода, prompt - окно с подтверждением</label>
+    		            </ul>
+	  	            </div>
+	            </td>
+	            <td>
+	  	            <div>
+	  		            <p class="question">2. Где верно указано имя переменной?</p>
+
+	    	            <ul>
+	                    <input class="answer" type="radio" name="q2" value="0">
+	                    <label>ver num;</label>
+	                    <br>
+	                    <input class="answer" type="radio" name="q2" value="1">
+	                    <label id="correctString2">let num;</label>
+	                    <br>
+	                    <input class="answer" type="radio" name="q2" value="0">
+	                    <label>var num-1;</label>
+	                    <br>
+	                    <input class="answer" type="radio" name="q2" value="0">
+	                    <label>var num_1;</label>
+	    	            </ul>
+	  	            </div>
+	            </td>
+	            <td>
+	  	            <div>
+	  		            <p class="question">3. Какие функции выполняет JS?</p>
+
+	    	            <ul>
+	                    <input class="answer" type="radio" name="q3" value="0">
+	                    <label>Отвечает за работу с базами данных</label>
+	                    <br>
+	                    <input class="answer" type="radio" name="q3" value="1">
+	                    <label id="correctString3">Отвечает за функции на стороне клиента</label>
+	                    <br>
+	                    <input class="answer" type="radio" name="q3" value="0">
+	                    <label>Создает разметку на странице сайта</label>
+	                    <br>
+	                    <input class="answer" type="radio" name="q3" value="0">
+	                    <label>Создает стилевое оформление сайта</label>
+	    	            </ul>
+		            </div>
+	            </td>
+	            <td>
+	  	            <div>
+	  		            <p class="question">4. В чем отличие между локальной и глобальной переменной?</p>
+
+	    	            <ul>
+	                    <input class="answer" type="radio" name="q4" value="0">
+	                    <label>Локальные видны повсюду, глобальные только в функциях</label>
+	                    <br>
+	                    <input class="answer" type="radio" name="q4" value="1">
+	                    <label id="correctString4">Глобальные видны повсюду, локальные только в функциях</label>
+	                    <br>
+	                    <input class="answer" type="radio" name="q4" value="0">
+	                    <label>wrong answer</label>
+	                    <br>
+	                    <input class="answer" type="radio" name="q4" value="0">
+	                    <label>Глобальные можно переопределять, локальные нельзя</label>
+    		            </ul>
+	  	            </div>
+	            </td>
+                <td>
+                    <div>
+                        <p class="question">5. Что такое условный оператор?</p>
+
+                        <ul>
+                        <input class="answer" type="radio" name="q5" value="0">
+                        <label>Конструкция для создания определенной переменной</label>
+                        <br>
+                        <input class="answer" type="radio" name="q5" value="1">
+                        <label id="correctString5">Оператор сравнения значений</label>
+                        <br>
+                        <input class="answer" type="radio" name="q5" value="0">
+                        <label>Конструкция, что выполняет код несколько раз</label>
+                        <br>
+                        <input class="answer" type="radio" name="q5" value="0">
+                        <label>wrong answer</label>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div>
+                        <p class="question">6. Какие циклы есть в языке JavaScript?</p>
+
+                        <ul>
+                        <input class="answer" type="radio" name="q6" value="0">
+                        <label>for, forMap, foreach, while</label>
+                        <br>
+                        <input class="answer" type="radio" name="q6" value="1">
+                        <label id="correctString6">for, while, do while, foreach</label>
+                        <br>
+                        <input class="answer" type="radio" name="q6" value="0">
+                        <label>for, forMap, foreach, while, do while</label>
+                        <br>
+                        <input class="answer" type="radio" name="q6" value="0">
+                        <label>for, while, do while</label>
+                        </ul>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <p class="question">7. Где верно указан запуск всплывающего окна?</p>
+
+                        <ul>
+                        <input class="answer" type="radio" name="q7" value="0">
+                        <label>info ("Hi")</label>
+                        <br>
+                        <input class="answer" type="radio" name="q7" value="1">
+                        <label id="correctString7">alert ("Hi")</label>
+                        <br>
+                        <input class="answer" type="radio" name="q7" value="0">
+                        <label>new alert ("Hi")</label>
+                        <br>
+                        <input class="answer" type="radio" name="q7" value="0">
+                        <label>Нет верных вариантов</label>
+                        </ul>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <p class="question">8. Какие значения можно хранить в переменных?</p>
+
+                        <ul>
+                        <input class="answer" type="radio" name="q8" value="0">
+                        <label>Только числа и строки</label>
+                        <br>
+                        <input class="answer" type="radio" name="q8" value="1">
+                        <label id="correctString8">Строки, числа с точкой, простые числа и булевые выражения</label>
+                        <br>
+                        <input class="answer" type="radio" name="q8" value="0">
+                        <label>Строки, числа с точкой и простые числа</label>
+                        <br>
+                        <input class="answer" type="radio" name="q8" value="0">
+                        <label>wrong answer</label>
+                        </ul>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <p class="question">9. Где можно использовать JavaScript?</p>
+
+                        <ul>
+                        <input class="answer" type="radio" name="q9" value="0">
+                        <label>Веб-приложения</label>
+                        <br>
+                        <input class="answer" type="radio" name="q9" value="1">
+                        <label id="correctString9">Можно во всех перечисленных</label>
+                        <br>
+                        <input class="answer" type="radio" name="q9" value="0">
+                        <label>Мобильные приложения</label>
+                        <br>
+                        <input class="answer" type="radio" name="q9" value="0">
+                        <label>Серверные приложения</label>
+                        </ul>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <p class="question">10. Где верно указан вывод данных?</p>
+
+                        <ul>
+                        <input class="answer" type="radio" name="q10" value="0">
+                        <label>prompt("Hello")</label>
+                        <br>
+                        <input class="answer" type="radio" name="q10" value="1">
+                        <label id="correctString10">documentWrite("Hello");</label>
+                        <br>
+                        <input class="answer" type="radio" name="q10" value="0">
+                        <label>print(Hello);</label>
+                        <br>
+                        <input class="answer" type="radio" name="q10" value="0">
+                        <label>console.log("Hello");</label>
+                        </ul>
+                    </div>
+                </td>
+	        </tr>
+	    </table>
+    <br/>
+    <div class="submitter">
+          <input class="quizSubmit" id="submitButton" onClick="submitQuiz()"
+          type="submit" value="Ответить" />
+    </div>
+  
+<!--show only wrong answers on submit-->
+    <div class="quizAnswers" id="correctAnswer1"></div>
+	<div class="quizAnswers" id="correctAnswer2"></div>
+    <div class="quizAnswers" id="correctAnswer3"></div>
+    <div class="quizAnswers" id="correctAnswer4"></div>
+    <div class="quizAnswers" id="correctAnswer5"></div>
+    <div class="quizAnswers" id="correctAnswer6"></div>
+    <div class="quizAnswers" id="correctAnswer7"></div>
+    <div class="quizAnswers" id="correctAnswer8"></div>
+    <div class="quizAnswers" id="correctAnswer9"></div>
+    <div class="quizAnswers" id="correctAnswer10"></div>
+
+<!--show score upon submit-->
+    <div>
+    	<h2 class="quizScore" id="userScore"></h2>
+    </div>
+	</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).on("scroll", function () {
+            if($(window).scrollTop() === 0) 
+                $("header").removeClass("fixed");
+            else
+                $("header").attr("class", "fixed");
+        });
+    </script>
+</body>
+</html>
