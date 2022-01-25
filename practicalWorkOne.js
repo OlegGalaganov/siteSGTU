@@ -1,13 +1,17 @@
 
 //0
-let bool = true;
+function startFirtsFromPartOne() {
+    let bool = true;
 if (typeof(bool) == "boolean") {
     alert("Тип переменной - булево выражение");
 } else {
     alert("Тип переменной точне не булево выражение");
 }
+}
+
 
 //1
+function startSecondFromPartOne() {
 let userNumber = prompt("Введите цифру от 1 до 3", 1).trim();
 switch (userNumber) {
     case "1":
@@ -22,8 +26,10 @@ switch (userNumber) {
     default:
         alert("Введенное число не находится в диапазоне 1 - 3");
 }
+}
 
 //2
+function startThirdFromPartOne() {
 let numbers = "";
 for (let i = 1; i <= 40; i++) {
     numbers += " " + i;
@@ -45,14 +51,18 @@ do {
     index++;
 } while (index <= 40);
 alert(numbers);
+}
 
 //3 закомментирована, чтобы не блокировать остальные примеры
+function startFourthFromPartOne() {
 while(true){
     alert("Вирусная страница");
+}
 }
 
 
 //4
+function startFivthFromPartOne() {
 let userResponse;
 let userNum;
 while (true){
@@ -63,9 +73,10 @@ while (true){
     }
 }
 alert("Поздравляем, вы ввели число больше 5. Теперь живите с этим.");
-
+}
 
 //5
+function startSixFromPartOne() {
 let evenNumbers = "";
 for (let i = 8; i < 21; i++) {
     if (i % 2 == 0) {
@@ -73,8 +84,10 @@ for (let i = 8; i < 21; i++) {
     }
 }
 alert(evenNumbers);
+}
 
 //6
+function startSevenFromPartOne() {
 let unevenNumbers = "";
 for (let i = 1; i < 8; i++) {
     if (i % 2 == 1 && i != 5) {
@@ -82,3 +95,4 @@ for (let i = 1; i < 8; i++) {
     }
 }
 alert(unevenNumbers);
+}

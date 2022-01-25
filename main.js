@@ -110,8 +110,8 @@ $(document).ready(function() {
 function ChangeTheme()
 {
     let link = document.getElementById("theme-link");
-    let lightTheme = "main.css";
-    let darkTheme = "dark.css";
+    let lightTheme = "css/main.css";
+    let darkTheme = "css/dark.css";
 
     let currTheme = link.getAttribute("href");
     let theme = "";
