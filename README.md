@@ -1,1 +1,0 @@
-# oleggalaganov.github.io
